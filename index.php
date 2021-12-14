@@ -42,16 +42,15 @@ include('db.php');
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.php"> LOS <span> LINCES</span><p class="logo_w3l_agile_caption">Tu resort de ensueño</p></a></h1>
+					<h1><a class="navbar-brand" href="index.php"> LOS <span> LINCES</span></a></h1>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--iris">
 						<ul class="nav navbar-nav menu__list">
 							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Casa</a></li>
-							<li class="menu__item"><a href="#about" class="menu__link scroll">Acerca de</a></li>
-							<li class="menu__item"><a href="#team" class="menu__link scroll">Equipo</a></li>
-							<li class="menu__item"><a href="#gallery" class="menu__link scroll">Galería</a></li>
+							<li class="menu__item"><a href="#about" class="menu__link scroll">Acerca de</a></li>						
+							
 							<li class="menu__item"><a href="#rooms" class="menu__link scroll">Habitaciones</a></li>
 							<li class="menu__item"><a href="#contact" class="menu__link scroll">Contáctenos</a></li>
 						</ul>
@@ -73,7 +72,7 @@ include('db.php');
 
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>SUN RISE</h4>
+								<h4>LOS LINCES</h4>
 									<h3>Sabemos lo que amas</h3>
 										<p>Bienvenido a nuestros hoteles
 </p>
@@ -89,8 +88,8 @@ include('db.php');
 						<div class="w3layouts-banner-top w3layouts-banner-top1">
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>AMANECER</h4>
-									<h3>Quédate con amigos y familias</h3>
+								<h4>LOS LINCES</h4>
+									<h3>Quédate con amigos y familia</h3>
 										<p>Ven y disfruta un momento precioso con nosotros</p>
 									<div class="agileits_w3layouts_more menu__item">
 				<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">leer más</a>
@@ -103,8 +102,8 @@ include('db.php');
 						<div class="w3layouts-banner-top w3layouts-banner-top2">
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>AMANECER</h4>
-								<h3>wquiero unas vacaciones lujosas?</h3>
+								<h4>LOS LINCES</h4>
+								<h3>Quiere unas vacaciones lujosas?</h3>
 										<p>Obtenga alojamiento hoy</p>
 									<div class="agileits_w3layouts_more menu__item">
 											<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">leer más</a>
@@ -134,8 +133,7 @@ include('db.php');
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
-										<h4>SOL
-  <span>SUBIR</span></h4>
+										<h4>LOS<span> LINCES</span></h4>
 										<img src="images/1.jpg" alt=" " class="img-responsive">
 										<h5>Sabemos lo que amas</h5>
 										<p>Ofrecer a los huéspedes vistas únicas y encantadoras desde sus habitaciones con sus comodidades excepcionales, hace que Star Hotel sea uno de los mejores en su tipo. Pruebe nuestro menú de comida, servicios increíbles y un personal amable mientras esté aquí..</p>
@@ -156,8 +154,7 @@ include('db.php');
 	<div class="banner-bottom">
 		<div class="container">	
 			<div class="agileits_banner_bottom">
-				<h3><span>Experimenta una buena estadía, disfruta de fantásticas ofertas</span> Encuentra nuestra acogedora bienvenida
-</h3>
+				<h3><span>Experimenta una buena estadía, disfruta de fantásticas ofertas</span> Encuentra nuestra acogedora bienvenida</h3>
 			</div>
 			<div class="w3ls_banner_bottom_grids">
 				<ul class="cbp-ig-grid">
@@ -166,14 +163,14 @@ include('db.php');
 							<span class="cbp-ig-icon w3_road"></span>
 							<h4 class="cbp-ig-title">DORMITORIOS PRINCIPALES
 </h4>
-							<span class="cbp-ig-category">AMANECER</span>
+							<span class="cbp-ig-category">LOS LINCES</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_cube"></span>
 							<h4 class="cbp-ig-title">BALCON CON VISTA AL MAR</h4>
-							<span class="cbp-ig-category">AMANECER</span>
+							<span class="cbp-ig-category">LOS LINCES</span>
 						</div>
 					</li>
 					<li>
@@ -181,14 +178,14 @@ include('db.php');
 							<span class="cbp-ig-icon w3_users"></span>
 							<h4 class="cbp-ig-title">GRAN CAFE
 </h4>
-							<span class="cbp-ig-category">AMANECER</span>
+							<span class="cbp-ig-category">LOS LINCES</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_ticket"></span>
 							<h4 class="cbp-ig-title">COBERTURA WIFI</h4>
-							<span class="cbp-ig-category">AMANECER
+							<span class="cbp-ig-category">LOS LINCES
 </span>
 						</div>
 					</li>
@@ -201,9 +198,9 @@ include('db.php');
  	<div class="about-wthree" id="about">
 		  <div class="container">
 				   <div class="ab-w3l-spa">
-                            <h3 class="title-w3-agileits title-black-wthree">Acerca de nuestro SUN RISE
+                            <h3 class="title-w3-agileits title-black-wthree">Acerca de nosotros
 </h3> 
-						   <p class="about-para-w3ls"> Lorem Ipsum es simplemente un texto simulado de la industria de impresión y composición tipográfica. Laca tempient vestibulum blandit faucibus. Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, en imperdiet urna
+						   <p class="about-para-w3ls"> Hotel "The Linces" sabemos que un ambiente ideal para los negocios de nuestros clientes es parte de su éxito, por este motivo le ofrecemos un lugar donde la elegancia, el confort y la modernidad se complementan con un trato personalizado y un servicio de primera que harán de su estadía la clave de su éxito.
 </p>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
@@ -224,18 +221,18 @@ include('db.php');
 	<div class="container">
 		<div class="advantages-main">
 				<h3 class="title-w3-agileits">Nuestros servicios
-</h3>
+	</h3>
 		   <div class="advantage-bottom">
 			 <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
 			 	<div class="advantage-block ">
 					<i class="fa fa-credit-card" aria-hidden="true"></i>
 			 		<h4>Quédate primero, paga después! </h4>
 			 		<p>Sin embargo, en ciertas circunstancias y el deber o la obligación se producen con frecuencia que los placeres tienen a sus funciones,
-.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Habitación decorada, con aire acondicionado
-</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Balcón privado
-</p>
+				.</p>
+									<p><i class="fa fa-check" aria-hidden="true"></i>Habitación decorada, con aire acondicionado
+				</p>
+									<p><i class="fa fa-check" aria-hidden="true"></i>Balcón privado
+				</p>
 			 		
 			 	</div>
 			 </div>
@@ -243,13 +240,13 @@ include('db.php');
 			 	<div class="advantage-block">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
 			 		<h4>Restaurante las 24 horas
-</h4>
-			 		<p>Sin embargo, en ciertas circunstancias y el deber o la obligación se producen con frecuencia que los placeres tienen a sus funciones,
-.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24 horas de servicio a la habitación
-</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Servicio de conserjería las 24 horas
-</p>
+	</h4>
+						<p>Sin embargo, en ciertas circunstancias y el deber o la obligación se producen con frecuencia que los placeres tienen a sus funciones,
+	.</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i>24 horas de servicio a la habitación
+	</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i>Servicio de conserjería las 24 horas
+	</p>
 			 	</div>
 			 </div>
 			<div class="clearfix"> </div>
@@ -284,7 +281,7 @@ include('db.php');
 								     </ul>
 							</div>
 							<div class="price-selet">	
-								<h3><span>$</span>320</h3>						
+								<h3><span>S/.</span>320</h3>						
 								<a href="admin/reservation.php" >	Reservar ahora
 </a>
 							</div>
@@ -309,7 +306,7 @@ include('db.php');
 								</ul>
 							</div>
 							<div class="price-selet">
-								<h3><span>$</span>220</h3>
+								<h3><span>S/.</span>220</h3>
 								<a href="admin/reservation.php" >Reservar ahora
 </a>
 							</div>
@@ -334,7 +331,7 @@ e</h4>
 								</ul>
 							</div>
 							<div class="price-selet">
-								<h3><span>$</span>180</h3>
+								<h3><span>S/.</span>180</h3>
 								<a href="admin/reservation.php" >Reservar ahora
 </a>
 							</div>
@@ -359,7 +356,7 @@ e</h4>
 								</ul>
 							</div>
 							<div class="price-selet">
-								<h3><span>$</span> 150</h3>
+								<h3><span>S/.</span> 150</h3>
 								<a href="admin/reservation.php" >Reservar ahora
 </a>
 							</div>
@@ -410,7 +407,7 @@ e</h4>
                     </div>
                     
                     
-                    <input type="submit" name="sub" value="Send Now" class="btn btn-primary">	
+                    <input type="submit" name="sub" value="Enviar" class="btn btn-primary">	
 				</form>
 				<?php
 				if(isset($_POST['sub']))
@@ -432,9 +429,9 @@ e</h4>
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Conectate con nosotros
 </h4>
-			<p class="contact-agile1"><strong>Teléfono :</strong>+94 (65)222-44-55</p>
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:tusolutionweb@gmail.com">tusolutionweb@gmail.com</a></p>
-			<p class="contact-agile1"><strong>Direccion :</strong> lima, surco</p>
+			<p class="contact-agile1"><strong>Teléfono :</strong>+951 951-951951</p>
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:tusolutionweb@gmail.com">LosLinces@gmail.com</a></p>
+			<p class="contact-agile1"><strong>Direccion :</strong> Cusco, Santiago</p>
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
@@ -444,14 +441,14 @@ e</h4>
 								
 							</ul>
 			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.7905052320443!2d-77.84987248482734!3d39.586871613613056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9f6a80ccf0661%3A0x7210426c67abc40!2sVirginia+Welcome+Center%2FSafety+Rest+Area!5e0!3m2!1sen!2sin!4v1485760915662" ></iframe>
+			
 		</div>
 		<div class="clearfix"></div>
 	</div>
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2018  <a href="index.php">AMENECER</a> </p>
+		        <p>© 2021  <a href="index.php">LOS LINCES</a> </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
