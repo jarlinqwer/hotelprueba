@@ -84,10 +84,10 @@ INFORMACION PERSONAL
 							   <div class="form-group">
                                             <label>Nacionalidad*</label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="nation"  value="Sri Lankan" checked="">Nacional
+                                                <input type="radio" name="nation"  value="Nacional" checked="">Nacional
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="nation"  value="Non Sri Lankan ">Extranjero
+                                                <input type="radio" name="nation"  value="Extranjero ">Extranjero
                                             </label>
                          
                                 </div>

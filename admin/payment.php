@@ -31,7 +31,7 @@ if(!isset($_SESSION["user"]))
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Navegación de palanca
-</span>
+            </span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -63,21 +63,15 @@ if(!isset($_SESSION["user"]))
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 
-                    <li>
-                        <a href="home.php"><i class="fa fa-dashboard"></i> Estado</a>
-                    </li>
-                    <li>
-                        <a  href="messages.php"><i class="fa fa-desktop"></i> Boletines informativos</a>
-                    </li>
+                    
+                    
 					<li>
-                        <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Reserva de habitacion</a>
+                        <a href="roombook.php"><i class="fa fa-bar-chart-o"></i> Reserva de habitacion</a>
                     </li>
                     <li>
                         <a class="active-menu" href="payment.php"><i class="fa fa-qrcode"></i> Pago</a>
                     </li>
-                    <li>
-                        <a  href="profit.php"><i class="fa fa-qrcode"></i> Lucro</a>
-                    </li>
+                   
                     <li>
                         <a href="logout.php" ><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión
 </a>

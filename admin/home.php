@@ -4,7 +4,8 @@ if(!isset($_SESSION["user"]))
 {
  header("location:index.php");
 }
-?> 
+?>  
+ <!-- RESERVA DE HABITACION  -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -26,21 +27,40 @@ if(!isset($_SESSION["user"]))
 
 <body>
     <div id="wrapper">
+        
+
+        <!-- NAV BAR RESPONSIVE -->
         <nav class="navbar navbar-default top-navbar" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                    <span class="sr-only">Navegación de palanca
-</span>
+                    <span class="sr-only">Navegación de palanca</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="home.php"> <?php echo $_SESSION["user"]; ?> </a>
-            </div>
-
-            
-
+            </div> 
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="usersetting.php"><i class="fa fa-user fa-fw"></i> Perfil del usuario</a>
+                        </li>
+                        <li><a href="settings.php"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
         </nav>
+
+
         <!--/. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
@@ -48,23 +68,18 @@ if(!isset($_SESSION["user"]))
 
 					<li>
                         <a href="roombook.php"><i class="fa fa-bar-chart-o"></i> Reserva de habitacion
-</a>
-                    </li>
+                                </a>
+                            </li>
 
-                    <li>
-                        <a href="messages.php"><i class="fa fa-desktop"></i> Boletines informativos
-</a>
-                    </li>
+                            
 
                     <li>
                         <a href="payment.php"><i class="fa fa-qrcode"></i> Pago</a>
                     </li>
-                    <li>
-                        <a  href="profit.php"><i class="fa fa-qrcode"></i> Lucro</a>
-                    </li>
+                    
                     <li>
                         <a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión
-</a>
+            </a>
                     </li>
                    
 
@@ -83,12 +98,10 @@ if(!isset($_SESSION["user"]))
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                            estado <small>Reserva de habitacion
- </small>
-                        </h1>
+                             Reserva de habitacion </h1>                       
                     </div>
                 </div>
-                <!-- /. ROW  -->
+                <!-- /. SE OBTIENE DATOS Y  SE MUESTRA  -->
 				<?php
 						include ('db.php');
 						$sql = "select * from roombook";
@@ -101,8 +114,7 @@ if(!isset($_SESSION["user"]))
 								$id = $row['id'];
 								if($new=="Not Conform")
 								{
-									$c = $c + 1;
-									
+									$c = $c + 1;									
 								
 								}
 						
@@ -222,7 +234,7 @@ if(!isset($_SESSION["user"]))
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
 											<button class="btn btn-primary" type="button">
 												 Cuartos reservados
- <span class="badge"><?php echo $r ; ?></span>
+                                    <span class="badge"><?php echo $r ; ?></span>
 											</button>
 											
 											</a>
@@ -249,16 +261,19 @@ if(!isset($_SESSION["user"]))
 														</div>
 														<div class='panel-footer back-footer-blue'>
 														<a href=show.php?sid=".$fid ."><button  class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
-													Show
-													</button></a>
+                                                            Mostrar
+                                                            </button></a>
+
+                                                        <a href=delete.php?sid=".$fid ."><button  class='btn btn-danger btn' data-toggle='modal' data-target='#myModal'>
+                                                            Eliminar
+                                                            </button></a>
+                                                            
+                                                            
+
 															".$mrow['TRoom']."
 														</div>
 													</div>	
-											</div>";
-															
-												
-					
-				
+											        </div>";	
 												
 											}
 											
@@ -283,57 +298,7 @@ if(!isset($_SESSION["user"]))
 								}
 						
 								?>
-                                <div class="panel panel-danger">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-											<button class="btn btn-primary" type="button">
-												 Followers  <span class="badge"><?php echo $f ; ?></span>
-											</button>
-											</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Nombre completo</th>
-                                            <th>Email</th>
-											<th> Siga el comienzo</th>
-                                            <th>Estado del permiso</th>
-                                            
-											
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        
-									<?php
-									$csql = "select * from contact";
-									$cre = mysqli_query($con,$csql);
-									while($crow=mysqli_fetch_array($cre) )
-									{	
-										
-											echo"<tr>
-												<th>".$crow['id']."</th>
-												<th>".$crow['fullname']."</th>
-												<th>".$crow['email']." </th>
-												<th>".$crow['cdate']." </th>
-												<th>".$crow['approval']."</th>
-												</tr>";
-										
-									
-									}
-									?>
-                                        
-                                    </tbody>
-                                </table>
-								<a href="messages.php" class="btn btn-primary">Más acción
-</a>
-                            </div>
+                                
                         </div>
                     </div>
                                         </div>
