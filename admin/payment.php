@@ -146,7 +146,7 @@ if(!isset($_SESSION["user"]))
 													<td>".$row['mepr']."</td>
 													<td>".$row['btot']."</td>
 													<td>".$row['fintot']."</td>
-													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
+													<td><a href=print.php?pid=".$id ." target='_blank' <button class='btn btn-primary'> <i class='fa fa-print'  ></i> Print</button></td>
 													</tr>";
 											}
 											else
@@ -164,7 +164,7 @@ if(!isset($_SESSION["user"]))
 													<td>".$row['mepr']."</td>
 													<td>".$row['btot']."</td>
 													<td>".$row['fintot']."</td>
-													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
+													<td><a href=print.php?pid=".$id ."  target='_blank'<button class='btn btn-primary'> <i class='fa fa-print'  ></i> Print</button></td>
 													</tr>";
 											
 											}

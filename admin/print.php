@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Invoice</title>
+		<title>RECIBO DE PAGO </title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
 		<script src="script.js"></script>
@@ -253,18 +253,18 @@ tr:hover .cut { opacity: 1; }
 	
 	?>
 		<header>
-			<h1>Invoice</h1>
+			<h1>BOLETA DE PAGO :D</h1>
 			<address >
 				<p>HOTEL LINCES,</p>
 				<p>Calle Nueva<br>CUSCO<br>SANTIAGO</p>
 				<p>951951951</p>
 			</address>
-			<span><img alt="" src="assets/img/sun.png"></span>
+			<!-- <span><img alt="" src="assets/img/sun.png"></span> -->
 		</header>
 		<article>
 			<h1>	Recipiente</h1>
 			<address >
-				<p><?php echo $title.$fname." ".$lname ?> <br></p>
+				<p><?php echo $title."    ".$fname."    ".$lname ?> <br></p>
 			</address>
 			<table class="meta">
 				<tr>

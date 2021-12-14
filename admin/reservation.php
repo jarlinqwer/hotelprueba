@@ -131,11 +131,10 @@ INFORMACION PERSONAL
                                             <label>Tipo de habitación*</label>
                                             <select name="troom"  class="form-control" required>
 												<option value selected ></option>
-                                                <option value="Superior Room">  HABITACIÓN SUPERIOR</option>
-                                                <option value="Deluxe Room">HABITACIÓN DE LUJO</option>
-												<option value="Guest House">CASA DE HUESPEDES</option>
-												<option value="Single Room">HABITACIÓN INDIVIDUAL
-</option>
+                                                <option value="HABITACIÓN SUPERIOR">  HABITACIÓN SUPERIOR</option>
+                                                <option value="HABITACIÓN DE LUJO">HABITACIÓN DE LUJO</option>
+												<option value="CASA DE HUESPEDES">CASA DE HUESPEDES</option>
+												<option value="HABITACIÓN INDIVIDUAL">HABITACIÓN INDIVIDUAL</option>
                                             </select>
                               </div>
 							  <div class="form-group">
